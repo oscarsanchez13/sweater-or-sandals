@@ -19,28 +19,29 @@ function getWeatherData() {
 
 const SWEATER_SANDALS = [{name:"a Sweater", img:"images/sweater.png"},{name:"Sandals", img:"images/sandals.png"}]
 
-// function displayName(data) {
-//   if (data.main.temp_min < 60 ) {
-//     return SWEATER_SANDALS[0].name
-//   } else {
-//     return SWEATER_SANDALS[1].name
-//   }
-// }
+function displayName(data) {
+  if (data.main.temp_min < 60 ) {
+    return SWEATER_SANDALS[0].name
+  } else {
+    return SWEATER_SANDALS[1].name
+  }
+}
 
-// function displayIcon(data) {
-//   if (data.main.temp < 60 ) {
-//     return SWEATER_SANDALS[0].img
-//   } else {
-//     return SWEATER_SANDALS[1].img
-//   }
-// }
+function displayIcon(data) {
+  if (data.main.temp < 60 ) {
+    return SWEATER_SANDALS[0].img
+  } else {
+    return SWEATER_SANDALS[1].img
+  }
+}
 
 function displayWeather(data) {
+  console.log(data.main)
     return `
     <div class="weather-results">
         <h1><strong>Current Weather for ${data.name}</strong></h1>
-        <img style="max-width:25%; height:auto;" src="${SWEATER_SANDALS[0].img}">
-        <p style="font-size:30px; margin-top:10px;">Perfect Weather for ${SWEATER_SANDALS[0].name}!</p>
+        <img style="max-width:25%; height:auto;" src="${displayIcon(data)}">
+        <p style="font-size:30px; margin-top:10px;">Perfect Weather for ${displayName(data)}!</p>
         <p style="color:orangered;" ">Description:</p><p"> ${data.weather[0].description}</p>
         <p style="color:orangered;">Temperature:</p><p> ${data.main.temp} &#8457; / ${(((data.main.temp)-32)*(5/9)).toFixed(2)} &#8451;</p>
         <p style="color:orangered;">Min. Temperature:</p><p> ${data.main.temp_min} &#8457; / ${(((data.main.temp_min)-32)*(5/9)).toFixed(2)} &#8451</p>
