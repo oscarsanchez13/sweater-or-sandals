@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Sweater or Sandals?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Megrim|Montserrat:400,600|Raleway:400,700" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main role=main>
+        <div class="start-display" id="start-page">
+            <header class="row" role="banner">
+                <h1 class="logo">Sweater <span>or</span> Sandals?</h1>               
+                <p>Curious if it's cold enough to wear a sweater or hot enough for sandals? Worry no more for I've got the answer for you! Search your location and I'll give you a suggestion!</p>
+            </header>
+
+            <form action="#" class="search-form row" id="search-query-form">
+                <input type="text" placeholder="Enter a city" class="search-query" id="search-term" required>
+                <button type="submit" class="submit-button">Search</button>
+            </form>
+        </div>
+
+        <section class="weather row" id="weather-display"></section>
+
+        <footer class="footer">           
+          <p>Created by Oscar Sanchez</p>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYwwQ-wTWZ6jI75jcsRz4if7dv30i5evo&libraries=places&callback=activatePlacesSearch"></script>
+</body>
+</html>
