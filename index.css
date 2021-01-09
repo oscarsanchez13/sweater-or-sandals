@@ -45,7 +45,7 @@ header {
 }
 
 h1.logo {
-    font-family: cursive, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 60px;
     margin-bottom: 15px;
 }
@@ -95,7 +95,7 @@ span {
 .weather-results h1 {
     font-size: 40px;
     color: black;
-    font-family: cursive, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .weather-image {
