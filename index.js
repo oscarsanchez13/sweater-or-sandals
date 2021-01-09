@@ -1,3 +1,5 @@
+
+
 const WEATHER_SEARCH_URL = "https://api.openweathermap.org/data/2.5/weather?id=524901&APPID=d86b9843fdc4941e520f985922146256"
 
 //retrieve data from OpenWeather API
@@ -13,9 +15,29 @@ function getWeatherData() {
         success: function (data) {
             let widget = displayWeather(data);
             $('#weather-display').html(widget);
+        },
+        error: function (data) {
+          let err = displayError(data);
+          $('#weather-display').html(err);
         }
     });
 }
+
+// function getWeatherData() {
+//     let city = $('.search-query').val();
+//     $.ajax(WEATHER_SEARCH_URL, {
+//         data: {
+//             units: 'imperial',
+//             q: city
+//         },
+//         dataType: 'jsonp',
+//         type: 'GET',
+//         success: function (data) {
+//             let widget = displayWeather(data);
+//             $('#weather-display').html(widget);
+//         }
+//     });
+// }
 
 const SWEATER_SANDALS = [{name:"a Sweater", img:"images/sweater.png"},{name:"Sandals", img:"images/sandals.png"}]
 
@@ -49,6 +71,14 @@ function displayWeather(data) {
         <p style="color:orangered;">Humidity:</p><p> ${data.main.humidity} &#37;</p>
     </div>
 `;
+}
+
+function displayError(data) {
+  return `
+  <div class="weather-results">
+        <h1><strong>Error - Invalid Search</strong></h1>
+    </div>
+`
 }
 
 function enterLocation() {
