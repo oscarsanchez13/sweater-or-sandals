@@ -23,22 +23,6 @@ function getWeatherData() {
     });
 }
 
-// function getWeatherData() {
-//     let city = $('.search-query').val();
-//     $.ajax(WEATHER_SEARCH_URL, {
-//         data: {
-//             units: 'imperial',
-//             q: city
-//         },
-//         dataType: 'jsonp',
-//         type: 'GET',
-//         success: function (data) {
-//             let widget = displayWeather(data);
-//             $('#weather-display').html(widget);
-//         }
-//     });
-// }
-
 const SWEATER_SANDALS = [{name:"a Sweater", img:"images/sweater.png"},{name:"Sandals", img:"images/sandals.png"}]
 
 function displayName(data) {
