@@ -24,3 +24,6 @@ The initial wireframes for the page and the list of results can be seen below.
 * The app was built using HTML5, CSS, JavaScript and jQuery.
 * The app is fully responsive.
 
+## Feautures Coming Soon
+* Implement Autoscroll, used after user actives "search" event listener.
+* Include a Secondary API (https://foursquare.com/) to find venues and activities in a specific location, weather permitting.
