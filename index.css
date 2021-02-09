@@ -26,6 +26,11 @@ header p {
     font-size: 15px;
 }
 
+header p.api-info {
+    color: orangered;
+    font-size: 12px;
+}
+
 header {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
@@ -83,6 +88,10 @@ span {
   color: coral
 }
 
+.white {
+  color: white;
+}
+
 
 /***** WEATHER DISPLAY *****/
 
@@ -108,6 +117,27 @@ span {
     width: 100%;
     background: rgba(230, 223, 223, 0.7);
     border-radius: 5px;
+}
+
+/***** NAVIGATION *****/
+
+nav {
+    margin: 20px 0;
+}
+
+button.category-button {
+    margin: 5px;
+    padding: 10px;
+    background: #fff;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+button.selected {
+    background: #ccc;
 }
 
 /***** RESULT DISPLAY *****/
@@ -143,6 +173,19 @@ div .result-image {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     ;
+}
+
+#foursquare-results span {
+    display: inline-block;
+    height: 32px;
+    padding: 0;
+    vertical-align: top;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#foursquare-results span.icon-text {
+    padding: 8px 4px 0 4px;
 }
 
 /***** FOOTER *****/

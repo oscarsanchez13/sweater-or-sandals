@@ -14,19 +14,40 @@
     <main role=main>
         <div class="start-display" id="start-page">
             <header class="row" role="banner">
-                <h1 class="logo">Sweater <span>or</span> Sandals?</h1>               
+                <h1 class="logo">Sweater <span>or</span> Sandals?</h1>
+                <p class="api-info">Powered by OpenWeatherMap and Foursquare API</p>   
                 <p>Curious if it's cold enough to wear a sweater or hot enough for sandals? Worry no more for I've got the answer for you! Search your location and I'll give you a suggestion!</p>
             </header>
 
             <form action="#" class="search-form row" id="search-query-form">
+                <!-- <label for="search-term" class="white" >Enter Your City</label> -->
                 <input type="text" placeholder="Enter a city" class="search-query" id="search-term" required>
                 <button type="submit" class="submit-button">Search</button>
             </form>
         </div>
 
-        <section class="weather row" id="weather-display"></section>
+        <section class="weather row" id="weather-display">
 
-        <footer class="footer">           
+        </section>
+
+        <nav role="navigation" class="navigation hide" id="results-navigation">
+            <div class="options row">
+                <button class="category-button" id="food-button">FOOD</button>
+                <button class="category-button" id="nightlife-button">NIGHTLIFE</button>
+                <button class="category-button" id="shops-button">SHOPS</button>
+                <button class="category-button" id="outdoors-button">OUTDOORS</button>
+                <button class="category-button" id="entertainment-button">ARTS</button>
+            </div>
+        </nav>
+
+        <section id="foursquare-results" class="row">
+
+        </section>
+
+        <footer class="footer">
+          <a href="https://github.com/oscarsanchez13" target="_blank"><img src="icons/github-icon.png" alt="github icon"></a>&nbsp;
+          <a href="https://www.linkedin.com/in/oscarsanchez13/" target="_blank"><img src="icons/linkedin-icon.png" alt="linkedin icon"></a>&nbsp;
+          <a href="mailto:architectsanchez13@gmail.com"><img src="icons/mail-icon.png" alt="email icon"></a>           
           <p>Created by Oscar Sanchez</p>
         </footer>
     </main>

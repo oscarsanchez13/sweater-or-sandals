@@ -1,5 +1,5 @@
 # Sweater or Sandals?
-Thinkful (https://thinkful.com/) First Capstone Project - a responsive website site that pulls data from a third party API, https://OpenWeatherMap.com, to present search results in a unique way.
+Thinkful (https://thinkful.com/) API Capstone Project- a responsive website site that pulls data from third party APIs, https://OpenWeatherMap.com and https://Foursquare.com, to present search results in a unique way.
 
 ## Live Site
 You can find Sweater or Sandals? at https://oscarsanchez13.github.io/sweater-or-sandals/
@@ -10,10 +10,10 @@ You can find Sweater or Sandals? at https://oscarsanchez13.github.io/sweater-or-
 
 
 ## Introduction
-Sweater or Sandals? gives users the ability to find weather results in a specific location and recommends clothing options based on their response.
+Sweater or Sandals? gives users the ability to find weather results in a specific location and recommends clothing and venue options based on their response.
 
 ## Use Case
-The user of this app will be able to deside on a proper attire based on the weather of the searched city.
+The user of this app will be able to decide on a proper attire based on the weather of the searched city and while they're at it, find venues in that area.
 
 ## UX
 The initial wireframes for the page and the list of results can be seen below.
@@ -23,7 +23,3 @@ The initial wireframes for the page and the list of results can be seen below.
 ## Technical
 * The app was built using HTML5, CSS, JavaScript and jQuery.
 * The app is fully responsive.
-
-## Features Coming Soon
-* Implement Autoscroll, used after user actives "search" event listener.
-* Include a Secondary API (https://foursquare.com/) to find venues and activities in a specific location, weather permitting.
